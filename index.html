@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Amount Convert</title>
+
+    <link rel="stylesheet" href="cc.css" />
+    <link rel="icon" type="image/jpg" href="dollar.jpg" />
+  </head>
+  <body>
+    <div class="currency-converter">
+      <h1>Currency Converter</h1>
+      <div class="data">
+        <label for="amount">AMOUNT:</label>
+        <input type="number" id="amount" name="amount" />
+        <button id="exchangeBtn">EXCHANGE</button>
+      </div>
+      <div class="flag-container">
+        <div class="flag">
+          <input type="text" list="flags1" placeholder="USA" id="flag1_input" />
+          <datalist id="flags1">
+            <!-- Options will be dynamically added via JavaScript -->
+          </datalist>
+          <img
+            src="https://flagsapi.com/US/shiny/64.png"
+            class="flag-image"
+            alt="USA Flag"
+          />
+        </div>
+        <div id="icon">
+          <img src="pngwing.com.png" alt="Exchange Icon" />
+        </div>
+        <div class="flag">
+          <input
+            type="text"
+            list="flags2"
+            placeholder="NEPAL"
+            id="flag2_input"
+          />
+          <datalist id="flags2">
+            <!-- Options will be dynamically added via JavaScript -->
+          </datalist>
+          <img
+            src="https://flagsapi.com/NP/shiny/64.png"
+            class="flag-image"
+            alt="Nepal Flag"
+          />
+        </div>
+      </div>
+      <div id="output">
+        <label for="result">EXCHANGE AMOUNT</label>
+        <input type="text" id="result" readonly />
+      </div>
+    </div>
+    <script src="cc.js" defer></script>
+  </body>
+</html>
